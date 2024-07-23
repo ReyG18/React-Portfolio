@@ -21,14 +21,14 @@ export default function Contact(props) {
 
   return(
     <>
-      <Box sx={{ textAlign: 'justify', my: 4 }}>
-        <Typography variant="h4" gutterBottom>
+      <Stack spacing={2} sx={{ textAlign: 'justify', my: 4 }}>
+        <Typography variant="h4" fontWeight='light'>
           Contact Me
         </Typography>
-        <Typography variant="body1" gutterBottom>
+        <Typography variant="body1" fontWeight='light'>
           Submit the form below to get in touch
         </Typography>
-      </Box>
+      </Stack>
       <Formik
         initialValues={{name: '', email: '', message: ''}}
         validationSchema={validationSchema}
