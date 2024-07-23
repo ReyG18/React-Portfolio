@@ -1,10 +1,17 @@
-import React from 'react';
-import { Box, Button, Typography, LinearProgress } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Button, Typography, LinearProgress, Stack } from '@mui/material';
+import SendIcon from '@mui/icons-material/Send';
 import { Formik, Form, Field } from 'formik';
 import { TextField } from 'formik-mui';
 import * as Yup from 'yup';
+import SnackbarNotification from '../components/snackbar';
 
-export default function Contact() {
+export default function Contact(props) {
+  const [open, setOpen] = useState(false);
+
+  const handleSnackbarClose = () => {
+    setOpen(false);
+  };
 
   const validationSchema = Yup.object({
     name: Yup.string().required('This field is required'),
@@ -14,57 +21,63 @@ export default function Contact() {
 
   return(
     <>
-      <Box>
-        <Typography variant="h4" gutterBottom>Contact Me</Typography>
-        <Typography variant="body1">
-          This is the Contact page.
+      <Box sx={{ textAlign: 'justify', my: 4 }}>
+        <Typography variant="h4" gutterBottom>
+          Contact Me
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          Submit the form below to get in touch
         </Typography>
       </Box>
       <Formik
         initialValues={{name: '', email: '', message: ''}}
         validationSchema={validationSchema}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, resetForm }) => {
           setTimeout(() => {
             setSubmitting(false);
-            alert(JSON.stringify(values, null, 2));
+            resetForm();
           }, 500);
         }}
       >
         {({ submitForm, isSubmitting }) => (
           <Form>
-            <Box>
+            <Stack spacing={2} sx={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
               <Field 
                 component={TextField}
                 name='name'
                 label='Name'
+                size='normal'
               />
-            </Box>
-            <Box>
               <Field 
                 component={TextField}
                 name='email'
                 label='Email'
+                size='normal'
               />
-            </Box>
-            <Box>
               <Field 
                 component={TextField}
                 name='message'
                 label='Message'
                 multiline
-                maxRows={4}
+                rows={4}
               />
-            </Box>
-
-            {isSubmitting && <LinearProgress />}
-            <Button
-              variant="contained"
-              color="primary"
-              disabled={isSubmitting}
-              onClick={submitForm}
-            >
-              Submit
-            </Button>
+              {isSubmitting && <LinearProgress />}
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                sx={{ mt: 2, m: 1, width: '20ch' }}
+                endIcon={<SendIcon />}
+                disabled={isSubmitting}
+                onClick={() => {
+                  <SnackbarNotification {...props}/>
+                  submitForm}}
+              >
+                <Typography variant='button' sx={{ textAlign: 'left', display: 'inline-block' }}>
+                  Send
+                </Typography>
+              </Button>
+            </Stack>
           </Form>
         )}
       </Formik>
