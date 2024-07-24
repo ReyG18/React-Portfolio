@@ -44,8 +44,8 @@ After starting the development server, you can access the portfolio at `http://l
 
 ## Future Developments
 
-- **Project Page:** The project page is currently incomplete and needs to be developed further to showcase the applications effectively.
-- **Resume Page:** The resume page is not yet finished and will be updated to include a downloadable resume and a detailed list of proficiencies.
+- **Project Page:** The project page is in development and will be updated to showcase applications effectively.
+- **Resume Page:** The resume page is in development and will be updated to include a downloadable resume and a detailed list of proficiencies.
 - **UI Improvements:** The user interface could be improved for a more polished look and better user experience.
 - **Responsiveness:** The site is not fully responsive yet and needs adjustments to ensure it looks good on all device sizes.
 
