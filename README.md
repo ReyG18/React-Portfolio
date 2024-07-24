@@ -17,14 +17,6 @@ This is a professional portfolio website created using React and Material-UI. It
 
 After starting the development server, you can access the portfolio at `http://localhost:3000` in your web browser.
 
-### Project Structure
-
-- **Home Page:** Contains a brief introduction and navigation to other sections.
-- **About Me:** Provides a short bio and a recent photo or avatar.
-- **Portfolio:** Displays images and links to six of my applications with links to the deployed applications and corresponding GitHub repositories.
-- **Contact:** Includes a contact form with fields for name, email, and message, with validation and a success notification.
-- **Resume:** Offers a downloadable resume and a list of proficiencies.
-
 ## Features
 
 - Responsive design for all devices.
