@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Tabs, Tab, Grid, Container } from '@mui/material';
+import { Tabs, Tab, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
 
@@ -21,7 +21,7 @@ function Navigation() {
         value={activeTab}
         textColor="secondary"
         onChange={handleChange}
-        indicatorColor="primary"
+        indicatorColor="secondary"
         variant="fullWidth"
       >
         <StyledTab label="About Me" component={Link} to="/" />
