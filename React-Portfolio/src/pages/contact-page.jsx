@@ -7,12 +7,14 @@ import * as Yup from 'yup';
 import SnackbarNotification from '../components/snackbar';
 
 export default function Contact() {
+  // State to manage snackbar visibility
   const [open, setOpen] = useState(false);
 
   const handleSnackbarClose = () => {
     setOpen(false);
   };
 
+  // Validation schema for the form using Yup
   const validationSchema = Yup.object({
     name: Yup.string().required('This field is required'),
     email: Yup.string().email().required('This field is required'),

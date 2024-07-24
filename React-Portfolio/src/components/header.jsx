@@ -5,6 +5,7 @@ import { AppBar, Toolbar, Typography, Container, Grid } from '@mui/material';
 function Header() {
 
   return(
+    // Fixed AppBar header
     <AppBar position="fixed">
       <Container>
         <Toolbar>
@@ -16,6 +17,7 @@ function Header() {
             </Grid>
           </Grid>
           <Grid item>
+            {/* Navigation containing links within header */}
             <Navigation />
           </Grid>
         </Toolbar>

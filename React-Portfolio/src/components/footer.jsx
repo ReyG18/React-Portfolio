@@ -9,6 +9,7 @@ function Footer() {
       <Container maxWidth="md">
         <Grid container spacing={2} justifyContent="center" alignItems="center">
           <Grid item>
+            {/* Social media icon buttons */}
             <Stack direction="row" spacing={2} justifyContent="center">
               <IconButton aria-label="GitHub" component="a" href="https://github.com/ReyG18" sx={{ color: 'primary.main' }}>
                 <GitHubIcon />

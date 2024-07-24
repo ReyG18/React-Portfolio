@@ -11,6 +11,7 @@ export default function About() {
             <Typography variant="h4" sx={{ fontWeight: 300, color: '#333' }}>
               About Me
             </Typography>
+            {/* Avatar placeholder */}
             <Avatar 
               alt="Reyanna Garibay"
               src="path/to/your/photo.jpg"

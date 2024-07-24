@@ -1,17 +1,17 @@
 import React from 'react'
 import { Snackbar, Alert } from '@mui/material'
-// import { Button } from '@mui/material/Button'
 
 export default function SnackbarNotification({ open, handleSnackbarClose}) {
 
   return(
     <>
-      {/* <Button onClick={handleOpen}>Submit</Button> */}
+      {/* Snackbar component to display notifications */}
       <Snackbar
         open={open}
         autoHideDuration={5000}
         onClose={handleSnackbarClose}
       >
+        {/* Using Alert inside Snackbar to take advantage of Alert styling */}
         <Alert
           onClose={handleSnackbarClose}
           severity='success'
