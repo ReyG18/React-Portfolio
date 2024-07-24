@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Tabs, Tab } from '@mui/material';
+import { Tabs, Tab, Grid, Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
 
@@ -16,18 +16,20 @@ function Navigation() {
   };
   
   return(
-    <Tabs
-      value={activeTab}
-      onChange={handleChange}
-      indicatorColor="primary"
-      textColor="primary"
-      variant="fullWidth"
-    >
-      <StyledTab label="About Me" component={Link} to="/" />
-      <StyledTab label="Portfolio" component={Link} to="/portfolio" />
-      <StyledTab label="Contact" component={Link} to="/contact" />
-      <StyledTab label="Resume" component={Link} to="/resume" />
-    </Tabs>
+    <Grid container justifyContent="flex-end">
+      <Tabs
+        value={activeTab}
+        textColor="secondary"
+        onChange={handleChange}
+        indicatorColor="primary"
+        variant="fullWidth"
+      >
+        <StyledTab label="About Me" component={Link} to="/" />
+        <StyledTab label="Portfolio" component={Link} to="/portfolio" />
+        <StyledTab label="Contact" component={Link} to="/contact" />
+        <StyledTab label="Resume" component={Link} to="/resume" />
+      </Tabs>
+    </Grid>
   )
 }
 
