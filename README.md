@@ -10,9 +10,8 @@ This is a professional portfolio website created using React and Material-UI. It
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Acknowledgements](#acknowledgements)
 - [Future Developments](#future-developments)
-- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Usage
 
@@ -25,14 +24,6 @@ After starting the development server, you can access the portfolio at `http://l
 - **Portfolio:** Displays images and links to six of my applications with links to the deployed applications and corresponding GitHub repositories.
 - **Contact:** Includes a contact form with fields for name, email, and message, with validation and a success notification.
 - **Resume:** Offers a downloadable resume and a list of proficiencies.
-
-### Example Navigation
-
-- **Home:** [Home](http://localhost:3000)
-- **About Me:** [About Me](http://localhost:3000/about)
-- **Portfolio:** [Portfolio](http://localhost:3000/portfolio)
-- **Contact:** [Contact](http://localhost:3000/contact)
-- **Resume:** [Resume](http://localhost:3000/resume)
 
 ## Features
 
@@ -51,6 +42,13 @@ After starting the development server, you can access the portfolio at `http://l
 - **React Router:** For dynamic routing in a single-page application.
 - **Netlify:** For deployment.
 
+## Future Developments
+
+- **Project Page:** The project page is currently incomplete and needs to be developed further to showcase the applications effectively.
+- **Resume Page:** The resume page is not yet finished and will be updated to include a downloadable resume and a detailed list of proficiencies.
+- **UI Improvements:** The user interface could be improved for a more polished look and better user experience.
+- **Responsiveness:** The site is not fully responsive yet and needs adjustments to ensure it looks good on all device sizes.
+
 ## Acknowledgements
 
 - [Formik MUI](https://github.com/stackworx/formik-mui) for integrating Formik with Material-UI.
@@ -58,10 +56,3 @@ After starting the development server, you can access the portfolio at `http://l
 - [Formik MUI Getting Started Guide](https://stackworx.github.io/formik-mui/docs/guide/getting-started/)
 - [Material-UI](https://mui.com/) for providing comprehensive React components.
 - [React](https://reactjs.org/) for the powerful front-end framework.
-
-## Future Developments
-
-- **Project Page:** The project page is currently incomplete and needs to be developed further to showcase the applications effectively.
-- **Resume Page:** The resume page is not yet finished and will be updated to include a downloadable resume and a detailed list of proficiencies.
-- **UI Improvements:** The user interface could be improved for a more polished look and better user experience.
-- **Responsiveness:** The site is not fully responsive yet and needs adjustments to ensure it looks good on all device sizes.
