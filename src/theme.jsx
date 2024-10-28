@@ -18,6 +18,18 @@ const theme = createTheme({
     },
   },
   typography: {
+    h1: {
+      fontSize: "3rem",
+      fontWeight: 300,
+    },
+    h2: {
+      fontSize: "1.75rem",
+      fontWeight: 300,
+    },
+    h3: {
+      fontSize: "1.5rem",
+      fontWeight: 300,
+    },
     fontFamily: 'Roboto, Arial, sans-serif',
   },
 });

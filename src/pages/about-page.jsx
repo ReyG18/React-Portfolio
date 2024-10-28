@@ -8,7 +8,7 @@ export default function About() {
       <Grid item xs={12} sm={10} md={10} lg={10}>
         <Paper elevation={3} sx={{ p: 3, textAlign: 'left', width: '100%', mx: 'auto' }}>
           <Stack spacing={3}>
-            <Typography variant="h4" sx={{ fontWeight: 300, color: '#333' }}>
+            <Typography variant="h1" sx={{ color: '#333' }}>
               About Me
             </Typography>
             {/* Avatar placeholder */}

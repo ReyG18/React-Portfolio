@@ -11,7 +11,11 @@ function Header() {
         <Toolbar>
           <Grid container alignItems="center" justifyContent="space-between">
             <Grid item>
-              <Typography variant="h6" component="div">
+              <Typography
+                variant="h3"
+                component="h2"
+                sx={{px: 1}}
+              >
                 Reyanna Garibay
               </Typography>
             </Grid>
