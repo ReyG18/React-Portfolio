@@ -1,12 +1,11 @@
 import React from 'react';
-import { Typography, Paper, Stack } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import { Typography, Paper, Stack, Grid2 } from '@mui/material';
 
 export default function Portfolio() {
   return(
     // Placeholder Paper
-    <Grid container justifyContent="center" sx={{ mt: 4 }}>
-      <Grid item xs={12} sm={10} md={10} lg={10}>
+    <Grid2 container justifyContent="center" sx={{ mt: 4 }}>
+      <Grid2 item xs={12} sm={10} md={10} lg={10}>
         <Paper elevation={3} sx={{ px: 40, py: 20, mx: 15, my: 5, textAlign: 'left', width: '100%' }}>
           <Stack spacing={3}>
             <Typography variant="h4" sx={{ fontWeight: 300, color: '#333' }}>
@@ -17,8 +16,8 @@ export default function Portfolio() {
             </Typography>
           </Stack>
         </Paper>
-      </Grid>
-    </Grid>
+      </Grid2>
+    </Grid2>
   );
 };
 

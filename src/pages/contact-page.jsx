@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Typography, LinearProgress, Stack, Paper } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import { Button, Typography, LinearProgress, Stack, Paper, Grid2 } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { Formik, Form, Field } from 'formik';
 import { TextField } from 'formik-mui';
@@ -23,8 +22,8 @@ export default function Contact() {
   });
 
   return(
-    <Grid container justifyContent="center" sx={{ mt: 4 }}>
-      <Grid item xs={12} sm={10} md={10} lg={10}>
+    <Grid2 container justifyContent="center" sx={{ mt: 4 }}>
+      <Grid2 item xs={12} sm={10} md={10} lg={10}>
         <Paper elevation={3} sx={{ px: 2, py: 2, mx: 30, textAlign: 'center', width: '100%' }}>
           <Stack spacing={3}>
             <Typography variant="h4" sx={{ fontWeight: 300, color: '#333' }}>
@@ -99,7 +98,7 @@ export default function Contact() {
           </Formik>
           <SnackbarNotification open={open} handleClose={handleSnackbarClose} />
         </Paper>
-      </Grid>
-    </Grid>
+      </Grid2>
+    </Grid2>
   );
 };

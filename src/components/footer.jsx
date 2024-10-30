@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Container, Stack, IconButton } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Box, Container, Stack, IconButton, Grid2 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -8,8 +7,8 @@ function Footer() {
   return (
     <Box component="footer" sx={{ py:2, backgroundColor: 'background.default', color: 'text.primary' }}>
       <Container maxWidth="md">
-        <Grid container spacing={2} justifyContent="center" alignItems="center">
-          <Grid item>
+        <Grid2 container spacing={2} justifyContent="center" alignItems="center">
+          <Grid2 item>
             {/* Social media icon buttons */}
             <Stack direction="row" spacing={2} justifyContent="center">
               <IconButton aria-label="GitHub" component="a" href="https://github.com/ReyG18" sx={{ color: 'primary.main' }}>
@@ -19,8 +18,8 @@ function Footer() {
                 <LinkedInIcon />
               </IconButton>
             </Stack>
-          </Grid>
-        </Grid>
+          </Grid2>
+        </Grid2>
       </Container>
     </Box>
   );
