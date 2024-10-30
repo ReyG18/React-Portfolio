@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Tabs, Tab, Grid } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
 

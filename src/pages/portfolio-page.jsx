@@ -1,5 +1,6 @@
 import React from 'react';
-import { Typography, Grid, Paper, Stack } from '@mui/material';
+import { Typography, Paper, Stack } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 
 export default function Portfolio() {
   return(
