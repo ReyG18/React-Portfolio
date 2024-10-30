@@ -1,13 +1,13 @@
 import React from 'react';
-import { Typography, Box, Paper, Avatar, Grid } from '@mui/material';
+import { Typography, Box, Paper, Avatar, Grid2 } from '@mui/material';
 
 export default function About() {
 
   return (
     <>
       <Paper elevation={3} >
-        <Grid container my={4} spacing={2}>
-          <Grid item xs={12} sm={6}>
+        <Grid2 container my={4} spacing={2}>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               <Typography
                 variant='h1'
@@ -20,8 +20,8 @@ export default function About() {
                 About Me
               </Typography>
             </Box>
-          </Grid>
-          <Grid item xs={12} sm={6}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               {/* Avatar Placeholder */}
               <Avatar 
@@ -30,27 +30,27 @@ export default function About() {
                 sx={{ width: 100, height: 100, mb: 2 }}
               />
             </Box>
-          </Grid>
-          <Grid item xs={12} sm={6}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
-              <Typography variant="body1" paragraph sx={{ color: '#555', lineHeight: 1.6 }}>
+              <Typography variant="body1" component="p" sx={{ color: '#555', lineHeight: 1.6 }}>
                 Hello! My name is Reyanna Garibay, and I am a web development enthusiast based in Texas, USA.
                 Currently, I am a student at Rice University's 6-month Full Stack Web Development Bootcamp, where I am learning about modern web technologies.
                 I have a foundation in HTML, CSS, and JavaScript, and I am gradually learning frameworks like React and Node.js.
               </Typography>
             </Box>
-          </Grid>
-          <Grid item xs={12} sm={6}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
-              <Typography variant="body1" paragraph sx={{ color: '#555', lineHeight: 1.6 }}>
+              <Typography variant="body1" component="p" sx={{ color: '#555', lineHeight: 1.6 }}>
                 Outside of coding, I enjoy gaming, especially The Elder Scrolls series, and I like walking outdoors, which helps me stay balanced and inspired.
                 These activities provide relaxation and help spark my creativity. My goal is to become a capable full stack developer, able to build useful and user-friendly web applications.
                 I am looking forward to applying my skills in real-world projects and working with other developers to create innovative solutions.
                 Thank you for visiting my portfolio, and I hope to connect with you!
               </Typography>
             </Box>
-          </Grid>
-        </Grid>
+          </Grid2>
+        </Grid2>
       </Paper>
     </>
   )
