@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Grid, Button, Typography, LinearProgress, Stack, Paper } from '@mui/material';
+import { Button, Typography, LinearProgress, Stack, Paper } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import SendIcon from '@mui/icons-material/Send';
 import { Formik, Form, Field } from 'formik';
 import { TextField } from 'formik-mui';

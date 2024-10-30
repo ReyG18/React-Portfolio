@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './navigation';
-import { AppBar, Toolbar, Typography, Container, Grid } from '@mui/material';
+import { AppBar, Toolbar, Typography, Container } from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 function Header() {
 
