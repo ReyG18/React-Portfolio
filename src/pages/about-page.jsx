@@ -1,13 +1,12 @@
 import React from 'react';
-import { Typography, Box, Paper, Avatar } from '@mui/material';
-import Grid from '@mui/material/Grid2';
+import { Typography, Box, Paper, Avatar, Grid2 } from '@mui/material';
 export default function About() {
 
   return (
     <>
       <Paper elevation={3} >
-        <Grid container my={4} spacing={2}>
-          <Grid item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
+        <Grid2 container my={4} spacing={2}>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               <Typography
                 variant='h1'
@@ -20,8 +19,8 @@ export default function About() {
                 About Me
               </Typography>
             </Box>
-          </Grid>
-          <Grid item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               {/* Avatar Placeholder */}
               <Avatar 
@@ -30,8 +29,8 @@ export default function About() {
                 sx={{ width: 100, height: 100, mb: 2 }}
               />
             </Box>
-          </Grid>
-          <Grid item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               <Typography variant="body1" component="p" sx={{ color: '#555', lineHeight: 1.6 }}>
                 Hello! My name is Reyanna Garibay, and I am a web development enthusiast based in Texas, USA.
@@ -39,8 +38,8 @@ export default function About() {
                 I have a foundation in HTML, CSS, and JavaScript, and I am gradually learning frameworks like React and Node.js.
               </Typography>
             </Box>
-          </Grid>
-          <Grid item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
+          </Grid2>
+          <Grid2 item size={{ xs: 12, sm: 6 }} offset={{ xs: 2, sm: 3 }}>
             <Box p={2}>
               <Typography variant="body1" component="p" sx={{ color: '#555', lineHeight: 1.6 }}>
                 Outside of coding, I enjoy gaming, especially The Elder Scrolls series, and I like walking outdoors, which helps me stay balanced and inspired.
@@ -49,8 +48,8 @@ export default function About() {
                 Thank you for visiting my portfolio, and I hope to connect with you!
               </Typography>
             </Box>
-          </Grid>
-        </Grid>
+          </Grid2>
+        </Grid2>
       </Paper>
     </>
   )
@@ -98,8 +97,8 @@ export default function About() {
   // )
 
   // return(
-  //   <Grid container justifyContent="center" sx={{ mt: 4 }}>
-  //     <Grid item xs={12} sm={10} md={10} lg={10}>
+  //   <Grid2 container justifyContent="center" sx={{ mt: 4 }}>
+  //     <Grid2 item xs={12} sm={10} md={10} lg={10}>
   //       <Paper elevation={3} sx={{ p: 3, textAlign: 'left', width: '100%', mx: 'auto' }}>
   //         <Stack spacing={3}>
   //           <Typography variant="h1" sx={{ color: '#333' }}>
@@ -124,6 +123,6 @@ export default function About() {
   //           </Typography>
   //         </Stack>
   //       </Paper>
-  //     </Grid>
-  //   </Grid>
+  //     </Grid2>
+  //   </Grid2>
   // );

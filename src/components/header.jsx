@@ -1,7 +1,6 @@
 import React from 'react';
 import Navigation from './navigation';
-import { AppBar, Toolbar, Typography, Container } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { AppBar, Toolbar, Typography, Container, Grid2 } from '@mui/material';
 
 function Header() {
 
@@ -10,8 +9,8 @@ function Header() {
     <AppBar position="fixed">
       <Container>
         <Toolbar>
-          <Grid container alignItems="center" justifyContent="space-between">
-            <Grid item>
+          <Grid2 container alignItems="center" justifyContent="space-between">
+            <Grid2 item>
               <Typography
                 variant="h3"
                 component="h2"
@@ -19,12 +18,12 @@ function Header() {
               >
                 Reyanna Garibay
               </Typography>
-            </Grid>
-          </Grid>
-          <Grid item>
+            </Grid2>
+          </Grid2>
+          <Grid2 item>
             {/* Navigation containing links within header */}
             <Navigation />
-          </Grid>
+          </Grid2>
         </Toolbar>
       </Container>
     </AppBar>

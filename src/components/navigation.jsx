@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Tabs, Tab } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Tabs, Tab, Grid2 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { styled } from '@mui/system';
 
@@ -19,7 +18,7 @@ function Navigation() {
   };
   
   return(
-    <Grid container justifyContent="flex-end">
+    <Grid2 container justifyContent="flex-end">
       {/* Tabs component to handle navigation */}
       <Tabs
         value={activeTab}
@@ -34,7 +33,7 @@ function Navigation() {
         <StyledTab label="Contact" component={Link} to="/contact" />
         <StyledTab label="Resume" component={Link} to="/resume" />
       </Tabs>
-    </Grid>
+    </Grid2>
   )
 }
 
